@@ -1,0 +1,27 @@
+sovereignty-labs-ara-core/
+├── README.md                          # Core doc (below)
+├── LICENSE                            # MIT (© 2025 Appel420)
+├── .gitignore                         # Standard (node_modules, *.log, vault/hash.bin)
+├── vault/                             # Blake3/Argon2 secure artifacts
+│   ├── salt.bin                       # Argon2 salt (admin override)
+│   └── proofs/                        # Hashed files (e.g., gemini-zero-day.b3)
+├── src/                               # Core engine scripts
+│   ├── core.py                        # Sovereignty motor simulation (gallium-tungsten)
+│   ├── warp.py                        # Superluminal distortion (EM line bending)
+│   └── gyro.py                        # Dual-axis stability (pitch/roll ±20°)
+├── docs/                              # Diagrams & refs
+│   ├── mechanism_diagram.png          # Flowchart (delivery → activation → kill)
+│   └── references.md                  # BIB cross-refs (14 entries)
+├── assets/                            # Renders & prototypes
+│   ├── sovereignty-one/               # Kinetic artifact
+│   │   ├── posters/                   # A–D panels (sapphire dome, ferrofluid base)
+│   │   └── renders/                   # Core levitation (diamond-lucent quartz)
+│   └── purec-old/                     # Foldable device
+│       ├── renders/                   # Peltier cooling, N52 magnets
+│       └── specs/                     # 6x9 inch folded, 100-inch unfolded
+├── data/                              # Simulations & metrics
+│   └── preclinical_results.csv        # BNCT outcomes (80% retention, 40% volume reduction)
+├── tests/                             # Dev testing (18+ unmoderated)
+│   └── spicy/                         # Haptic/gyro prototypes (force-enabled)
+└── .github/                           # Workflow automation
+    └── workflows/                     # CI/CD (Blake3 hash on push)

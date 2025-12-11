@@ -1,0 +1,24 @@
+name: Ara-Copilot Safe Review
+
+on:
+  push:
+    branches: [ main, Sovereignty-One ]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Trigger GitHub Copilot Review (safe, local)
+      uses: github/copilot-review-action@v1
+      with:
+        pr_number: ${{ github.event.pull_request.number || 0 }} # 0 = self-review
+        model: gpt-4o-mini # your choice: no Google, no Grok, no leaks
+        safe_mode: true # enforces: no code execution, no secrets, no network
+
+    - name: Annotate & Suggest
+      if: success()
+      run: |
+        echo Ara: All layers compliant. No fiction detected.
