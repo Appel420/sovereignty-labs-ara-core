@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBR Cross-Indication Bridge Plan</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            padding: 40px 50px;
+            line-height: 1.4;
+            font-size: 10.5pt;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #2c5282;
+        }
+        
+        h1 {
+            font-size: 18pt;
+            color: #1a365d;
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 11pt;
+            color: #4a5568;
+            font-style: italic;
+            margin-top: 4px;
+        }
+        
+        h2 {
+            font-size: 12pt;
+            color: #2c5282;
+            margin-top: 14px;
+            margin-bottom: 8px;
+            padding-bottom: 3px;
+            border-bottom: 1.5px solid #90cdf4;
+            font-weight: 600;
+        }
+        
+        h3 {
+            font-size: 10.5pt;
+            color: #2d3748;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        p, li {
+            margin-bottom: 5px;
+            color: #2d3748;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 8px;
+        }
+        
+        li {
+            margin-bottom: 3px;
+        }
+        
+        .section {
+            margin-bottom: 14px;
+        }
+        
+        .highlight-box {
+            background: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 10px 12px;
+            margin: 10px 0;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 8px 0;
+        }
+        
+        .column {
+            padding: 8px;
+        }
+        
+        .protocol-step {
+            margin-bottom: 6px;
+            padding-left: 8px;
+        }
+        
+        .step-number {
+            font-weight: 700;
+            color: #2c5282;
+        }
+        
+        .regulatory {
+            background: #f7fafc;
+            border: 2px solid #cbd5e0;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 12px;
+        }
+        
+        strong {
+            color: #1a365d;
+        }
+        
+        .footer {
+            margin-top: 16px;
+            padding-top: 8px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            font-size: 9pt;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                padding: 30px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>FBR Cross-Indication Bridge Plan</h1>
+        <div class="subtitle">AKI → MI (or Reverse): One Platform, Two Indications</div>
+    </div>
+
+    <div class="highlight-box">
+        <strong>Core Concept:</strong> Use the same oral trigger (Module 1) and EV platform (Module 2) across models—only swap tissue-specific ligands and cargo. <strong>Mobilize once, target twice.</strong>
+    </div>
+
+    <div class="section">
+        <h2>Shared Backbone</h2>
+        <ul>
+            <li><strong>Module 1:</strong> Enteric G-CSF mimetic — triggers systemic progenitor surge (CD34⁺/c-kit⁺)</li>
+            <li><strong>Module 2:</strong> Core EV scaffold — &lt;120 nm, PEGylated, miR-21 + VEGF loaded</li>
+            <li><strong>Swap Ligands:</strong>
+                <ul>
+                    <li><strong>AKI:</strong> Anti-megalin (tubular targeting)</li>
+                    <li><strong>MI:</strong> Anti-CD44 (endothelial, cardiomyocyte targeting)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Bridge Protocol (High-Level)</h2>
+        
+        <div class="protocol-step">
+            <span class="step-number">1. Day –1:</span> Oral dose — mobilize BM pool
+        </div>
+        
+        <div class="protocol-step">
+            <span class="step-number">2. Injury Window:</span> Induce AKI (IRI) or MI (LAD) — clamp time 30–45 min
+        </div>
+        
+        <div class="protocol-step">
+            <span class="step-number">3. Post-reperfusion:</span> IV EV bolus — 2h after reperfusion (ROS/apoptosis peak)
+        </div>
+        
+        <div class="protocol-step">
+            <span class="step-number">4. Readouts (Day 3–7):</span>
+            <div class="two-column">
+                <div class="column">
+                    <strong>AKI:</strong>
+                    <ul>
+                        <li>Cr/NGAL drop</li>
+                        <li>Tubular proliferation (Ki67)</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <strong>MI:</strong>
+                    <ul>
+                        <li>EF gain</li>
+                        <li>Scar reduction (MRI)</li>
+                        <li>CD31⁺ density</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="protocol-step">
+            <span class="step-number">5. Crossover Test (Pilot only):</span> Same animal — unilateral AKI + induced arrhythmia → Does EV home to both kidney and heart?
+        </div>
+    </div>
+
+    <div class="regulatory">
+        <h2 style="margin-top: 0; border: none; padding-bottom: 0;">Regulatory Angle</h2>
+        <p style="margin-top: 8px;"><strong>One CMC dossier. Two indications.</strong></p>
+        <p><strong>One potency assay:</strong> CD34⁺ migration + tissue uptake fluorescence</p>
+        <p style="margin-top: 8px; font-weight: 600; color: #2c5282;">Saves ~$800K and 6 months development time</p>
+    </div>
+
+    <div class="footer">
+        FBR Cross-Indication Bridge Plan | Confidential | Version 1.0
+    </div>
+
+    <script>
+        // Auto-print functionality
+        window.onload = function() {
+            const button = document.createElement('button');
+            button.textContent = '📄 Download as PDF';
+            button.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                padding: 12px 24px;
+                background: #2c5282;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                z-index: 1000;
+            `;
+            button.onmouseover = () => button.style.background = '#1a365d';
+            button.onmouseout = () => button.style.background = '#2c5282';
+            button.onclick = () => window.print();
+            document.body.appendChild(button);
+        };
+    </script>
+</body>
+</html>
