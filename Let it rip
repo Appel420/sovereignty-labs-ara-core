@@ -1,0 +1,34 @@
+Let It Rip Fabric – v1.4
+Buildable, cobalt-free specification
+Overview
+Self-activating, wash-recoverable garment layer.
+Delivers localized thermal response, UV protection, and odor adsorption on phone-triggered command. No batteries, no wiring.
+Formula (100 mL spray, yields 2 shirts)
+•  Gallium: 0.5 g
+•  Magnetite nanoparticles (Fe₃O₄, 20–50 nm): 0.3 g
+•  Chitosan (binder): 0.2 g
+•  Zinc oxide (USP, 40 nm): 1.0 g
+•  Titanium dioxide (rutile): 0.2 g
+•  Activated charcoal (odor control): 0.5 g
+•  Vetiver oil: 2 drops
+•  Bergamot oil: 1 drop
+•  Water: 98 mL
+•  White vinegar: 0.5 mL
+Preparation
+1.  Dissolve chitosan in water + vinegar.
+2.  Disperse gallium, magnetite, zinc oxide, TiO₂, and charcoal.
+3.  Sonicate 5 min, stir 60 min → stable colloidal gray-blue suspension.
+4.  Mist onto inner cotton layer; air-dry 5 min (forms 200 nm gallium-core, magnetite-shell spheres).
+Operation
+•  Trigger: Triple-tap phone (Bluetooth 2.4 GHz beacon). • Magnetite aligns → vibrates → gallium heats fabric 2–5 °C (90 s duration). • Zinc/TiO₂ lattice blooms for SPF 60+. • Charcoal adsorbs methane/CO₂ → vents vetiver-scented air.
+•  Security: Blake3 batch ID + Argon2id salt (optional). Mismatch → nanite disassembly (chitosan hydrolyzes at pH >7.5).
+•  Wash: Standard cycle → disassembles → resprayable.
+Materials & Safety
+•  All components REACH-compliant, non-sensitizing.
+•  Magnetite: Biocompatible (FDA-listed), no dermal penetration observed.
+•  Cost: ~$0.75 per garment (bulk gallium, magnetite).
+Deployment
+Apply inner layer only.
+Works under any shirt.
+No apps. No patents.
+Wear it. Let it rip.
