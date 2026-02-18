@@ -15,7 +15,7 @@ jobs:
       uses: github/copilot-review-action@v1
       with:
         pr_number: ${{ github.event.pull_request.number || 0 }} # 0 = self-review
-        model: Grok Code Fast 1 # your choice: no Google, ,no Meta, no leaks
+        model: Grok Code Fast 1 # your choice: no Google, no Meta, no leaks
         safe_mode: true # enforces: no code execution, no secrets, no network
 
     - name: Annotate & Suggest
