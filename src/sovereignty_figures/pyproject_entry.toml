@@ -1,0 +1,5 @@
+# Minimal pyproject.toml entry for the package.
+# Merge into the repo-root pyproject.toml [project.scripts] table.
+
+[project.scripts]
+sovereignty-figures = "sovereignty_figures.cli:main"
